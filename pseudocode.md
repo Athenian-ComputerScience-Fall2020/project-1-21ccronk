@@ -1,7 +1,21 @@
 # Pseudocode for this program
-(this can be in a flowchart, using bullet points, inserting a picture, etc)
+User is prompted how much money they have 
+    Using a function that generates all possible combinations of toppings and calculates the price of each pizza (including dough) the user is show which pizzas they can afford
+    The user is also prompted if there are any toppings they don't like that they don't want to be offered.
+    Then they enter which pizza they want (figure out best format)
+    THen they are told how much money they have left and have the option of running again
 
-Below are templates for flowcharts and mardown. feel free to edit them - or delete them and do something else if you prefer.
+def a function
+    - takes 
+
+Prompted a menu with possible toppings - user inputs how much money they have
+Then user is prompted to enter a topping they want - as they enter, add up the prices to make sure it is under their initial input amount of money
+Another tooping they want
+Another
+Until the program either tells them they are over their price limit and their order has been submitted 
+    or the user can input order
+Then it prints "your pizza is going to be x money. you have y amount of change" 
+    possibly ask if they want to order another pizza?
 
 # Markdown
 
