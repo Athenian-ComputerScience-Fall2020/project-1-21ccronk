@@ -2,7 +2,7 @@
 #  
 
 print("Welcome to the Pizza Shack! Every pizza is served with tomato sauce and cheese, but you can add toppings on top of that, as you'd like, and as your money permits!")
-print("Today's add-on toppings are pepperoni, sausage, olives, mushrooms, bell pepper, and extra cheese!")
+print("Every cheese pizza starts at $4. Today's add-on toppings are pepperoni, sausage, olives, mushrooms, bell pepper, and extra cheese!")
 x = int(input("How much money do you have to spend?: "))
 
 
@@ -29,3 +29,4 @@ while y <= x:
     
 print("Your pizza will cost $" + str(y))
 
+#afford another pizza - put everything in function and call it again with new leftover money
