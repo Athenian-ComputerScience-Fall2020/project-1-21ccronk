@@ -1,13 +1,12 @@
 # Collaborators (including web sites where you got help: (enter none if you didn't need help)
-#  https://www.geeksforgeeks.org/python-return-statement/
-# Got help from Megan
-# still need to add for loop
-# figure out how to give final total
+#  https://www.geeksforgeeks.org/python-return-statement/ - help with return statements
+#https://www.w3schools.com/python/python_for_loops.asp - help with for loops (not sure where to include)
+# Got some help from Megan
 
 def pizzashack(x):
 
     toppings = []
-    y = 4
+    y = 4 #starting price of standard cheese pizza
     try:
         while y <= x: 
             topping = input("Enter a topping you would like or type 'order' to submit your order: ")
@@ -34,7 +33,7 @@ def pizzashack(x):
             elif topping == 'order':
                 break
     except:
-        print("Please enter a topping.")
+        print("Please enter a topping.") 
                     
     print("Your cheese, " + str(toppings[:-1]) + " pizza will cost $" + str(y))
     change = x - y
@@ -46,7 +45,7 @@ print("Every cheese pizza starts at $4. Today's add-on toppings are pepperoni, s
 while True:
     x = int(input("How much money do you have to spend?: "))
     change = pizzashack(x)
-    y = x - change
+    y = x - change #used this equation to get y back from the function
     if change >= 4:
         print("You have $" + str(change) + " left.")
         print("Do you want to order another pizza? (yes/no) ")
@@ -57,7 +56,7 @@ while True:
         if order2 == 'yes':
             change = pizzashack(change)
             print("You have $" + str(change) + " left.")
-            break
+            break #can only have up to two pizzas
     elif change < 4:
         print("Your pizza will cost $" + str(y) + ".")
         print("Your change is $" + str(change) + ".")
