@@ -35,7 +35,7 @@ def pizzashack(x):
     except:
         print("Please enter a topping.") 
                     
-    print("Your cheese, " + str(toppings[:-1]) + " pizza will cost $" + str(y))
+    print("Your cheese, " + str(toppings[:-1]) + " pizza will cost $" + str(y)) #list [:-1] to not count 'order' as a topping
     change = x - y
     return change
 
